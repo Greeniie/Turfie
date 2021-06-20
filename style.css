@@ -89,12 +89,15 @@ h6 {
   font-family: "Open Sans", sans-serif;
 }
 
-hr {
+#text2::after {
+  content: "";
+  display: block;
   position: relative;
-  border: none;
-  height: 6px;
-  width: 180px;
-  background: #28a745;
+  width: 45%;
+  margin-left: 0;
+  margin-right: auto;
+  padding-top: 10px;
+  border-bottom: 5px solid #28a745;
 }
 
 .fast {
@@ -295,7 +298,7 @@ hr {
 
 @media only screen and (max-width: 1350px) {
   .showcase img {
-    opacity: 0;
+    display: none;
   }
 
   .navmenu {
@@ -335,5 +338,46 @@ hr {
 
   .hamburger.active .bar3 {
     transform: translateY(-0.5rem) rotate(-45deg);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .text {
+    text-align: center !important;
+  }
+
+  .form-control {
+    width: 100%;
+  }
+
+  .body {
+    text-align: center !important;
+  }
+
+  #text2::after {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .fast {
+    flex-direction: column;
+  }
+  .club {
+    flex-direction: column;
+  }
+  .manage {
+    flex-direction: column;
+  }
+
+  .create {
+    flex-direction: column;
+  }
+
+  .tools {
+    flex-direction: column;
+  }
+
+  .use {
+    flex-direction: column;
   }
 }
