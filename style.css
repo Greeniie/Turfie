@@ -302,7 +302,7 @@ h6 {
   }
 
   .navmenu {
-    position: relative;
+    position: absolute;
     height: 100%;
     right: -100%;
     top: 3rem;
